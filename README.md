@@ -12,29 +12,16 @@ Based on the selected posts' content (from 1st Feb 2018 to 30th Apr 2018) from K
 - Minimise F1 Score
 
 ## Exploratory Data Analysis
-Posts distribution by labels.
+Some very simple visualisation for a general sense of data given.
 
-![alt text](https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/01%20label%20distribution.png)
+Posts distribution by labels [Left] and the length distribution of posts [Right].
+<img src="https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/01%20label%20distribution.png" width="400">  <img src="https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/post%20length%20dist.png" width="400">
 
-## Data Cleaning Tools Used
+[Left] Post distribution by each KOL.<br>
+[Right] Total number of likes for each KOL.
 
-To segment chinese sentences into meaningful and useful phrases, chinese segmentation tool [Jieba](https://github.com/fxsjy/jieba) is used for words segmentation.
-```python
-seg_list = jieba.cut_for_search(text1)
-```
-Removing meaningless words in phrases would increase the accuracies for classification, Stopwords [stopwords-zh](https://github.com/stopwords-iso/stopwords-zh) dictionary is used for cleaning.
-```python
-def cleanstop(x):
-    stop = pd.read_csv('stopwords-zh.txt').iloc[:,0].tolist()
-    x1 = (','.join(jieba.cut_for_search(x))).split(',')
-    x2 = [i for i in x1 if i not in stop]
-    return ''.join(x2)
-```
-
-## Approach
-Approach used 
-
+<img src="https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/user%20post%20dist.png" width="400">  <img src="https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/user%20id%20likes.png" width="400">
 
 ## Results
-The final F1 score reached 0.85 for the given data sets.
+The final F1 score reached 0.85 using Cat-Boost for the given data sets.
 
