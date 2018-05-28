@@ -1,0 +1,17 @@
+Stock				0	
+Bond				1	
+Oil				2	
+Gold				3	
+Real Estate			4	
+		
+Chinese PDC			5	
+English PDC			6	
+Jewellery			7	
+Artefact			8	
+		
+Golf				9	
+Car				10	
+		
+Oversea Education		11
+Yong Children Education		12
+
