@@ -12,8 +12,9 @@ Based on the selected posts' content (from 1st Feb 2018 to 30th Apr 2018) from K
 - Minimise F1 Score
 
 ## Exploratory Data Analysis
+Posts distribution by labels.
 
-
+![alt text](https://github.com/rileykwok/Weibo-Posts-Classification-NLP-/blob/master/images/01%20label%20distribution.png)
 
 ## Data Cleaning Tools Used
 
@@ -32,7 +33,7 @@ def cleanstop(x):
 
 ## Approach
 Approach used 
-![alt text][https://drive.google.com/file/d/1YpezbDJfjTYMVKw3gZB5yN-a3_u2XNbQ/view?usp=sharing]
+
 
 ## Results
 The final F1 score reached 0.85 for the given data sets.
